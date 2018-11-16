@@ -21,6 +21,10 @@ class AddChangeDateCommand(sublime_plugin.TextCommand):
     if settings.has("spec_author_mail"):
       author_mail = settings.get("spec_author_mail")
 
+    # Append zero release if version doesn't contains release
+    if version not in "-":
+      version = "%s-0" % version
+
     date = datetime.date.today().strftime("%a %b %d %Y")
     
     self.view.run_command("insert_snippet", {"contents": "* %s %s <%s> - %s\n- " % (date, author_name, author_mail, version)})

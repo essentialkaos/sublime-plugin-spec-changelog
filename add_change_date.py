@@ -22,7 +22,7 @@ class AddChangeDateCommand(sublime_plugin.TextCommand):
       author_mail = settings.get("spec_author_mail")
 
     # Append zero release if version doesn't contains release
-    if version not in "-":
+    if "-" not in version:
       version = "%s-0" % version
 
     date = datetime.date.today().strftime("%a %b %d %Y")

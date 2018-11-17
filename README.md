@@ -1,4 +1,4 @@
-## Spec Changelog Plugin
+## Spec Changelog Plugin [![codebeat badge](https://codebeat.co/badges/bce2e63a-1ae7-4a31-8fed-3af4d751f4f4)](https://codebeat.co/projects/github-com-essentialkaos-sublime-plugin-spec-changelog-master) [![License](https://gh.kaos.st/ekol.svg)](https://essentialkaos.com/ekol)
 
 Simple plugin for Sublime Text 3 for adding changelog record header.
 

@@ -5,6 +5,12 @@ Simple plugin for Sublime Text 3 for adding changelog record header.
 ### Installation
 
 1. Download the latest versions of `add_change_date.py` file;
+```bash
+cd "~/Library/Application\ Support/Sublime\ Text\ 3/Packages/"
+wget https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py
+# or
+curl https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py -o "~/Library/Application\ Support/Sublime\ Text\ 3/Packages/add_change_date.py"
+```
 2. Copy it into directory `Sublime Text 3/Packages/User/`;
 3. Go to _Preferences_ → _Settings_;
 4. Add `spec_author_name` and `spec_author_mail` properties;

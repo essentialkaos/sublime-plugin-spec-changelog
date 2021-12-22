@@ -4,24 +4,36 @@ Simple plugin for Sublime Text 3 for adding changelog record header.
 
 ### Installation
 
-1. Download the latest versions of `add_change_date.py` file;
+#### macOS
+
+Open `Terminal.app` and do:
+
 ```bash
-cd "~/Library/Application\ Support/Sublime\ Text\ 3/Packages/"
-wget https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py
-# or
-curl https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py -o "~/Library/Application\ Support/Sublime\ Text\ 3/Packages/add_change_date.py"
+curl -OL# https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py
+mv add_change_date.py "$HOME/Library/Application Support/Sublime Text/Packages/User/"
 ```
-2. Copy it into directory `Sublime Text 3/Packages/User/`;
-3. Go to _Preferences_ → _Settings_;
-4. Add `spec_author_name` and `spec_author_mail` properties;
-5. Go to _Preferences_ → _Key Bindings_;
-6. Add something like this:
+
+#### Windows
+
+Press <kbd>Win</kbd>+<kbd>R</kbd>, type `powershell` and press Enter. Then do:
+
+```powershell
+Invoke-WebRequest -Uri "https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py" -OutFile add_change_date.py
+Move-Item -Force -Path add_change_date.py -Destination "$HOME\AppData\Roaming\Sublime Text 4\Packages\User\"
+```
+
+### Configuration
+
+1. Go to _Preferences_ → _Settings_;
+2. Add `spec_author_name` and `spec_author_mail` properties;
+3. Go to _Preferences_ → _Key Bindings_;
+4. Add something like this:
 ```json
 [
   {"keys": ["ctrl+0"], "command": "prompt_add_change_date" }
 ]
 ```
-7. Press <kbd>Ctrl</kbd>+<kbd>0</kbd> in your changelog section.
+5. Press <kbd>Ctrl</kbd>+<kbd>0</kbd> in your changelog section.
 
 ### License
 

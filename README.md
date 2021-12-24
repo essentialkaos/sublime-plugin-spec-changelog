@@ -19,7 +19,7 @@ Press <kbd>Win</kbd>+<kbd>R</kbd>, type `powershell` and press Enter. Then do:
 
 ```powershell
 Invoke-WebRequest -Uri "https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py" -OutFile add_change_date.py
-Move-Item -Force -Path add_change_date.py -Destination "$HOME\AppData\Roaming\Sublime Text 4\Packages\User\"
+Move-Item -Force -Path add_change_date.py -Destination "$HOME\AppData\Roaming\Sublime Text\Packages\User\"
 ```
 
 ### Configuration

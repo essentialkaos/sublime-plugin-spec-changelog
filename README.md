@@ -1,6 +1,6 @@
-## Spec Changelog Plugin [![codebeat badge](https://codebeat.co/badges/bce2e63a-1ae7-4a31-8fed-3af4d751f4f4)](https://codebeat.co/projects/github-com-essentialkaos-sublime-plugin-spec-changelog-master) [![License](https://gh.kaos.st/apache2.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+## Spec Changelog Plugin
 
-Simple plugin for Sublime Text 3 for adding changelog record header.
+Simple plugin for Sublime Text 3/4 for adding changelog record header.
 
 ### Installation
 
@@ -9,7 +9,7 @@ Simple plugin for Sublime Text 3 for adding changelog record header.
 Open `Terminal.app` and do:
 
 ```bash
-curl -OL# https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py
+curl -OL# https://raw.githubusercontent.com/essentialkaos/sublime-plugin-spec-changelog/refs/heads/master/add_change_date.py
 mv add_change_date.py "$HOME/Library/Application Support/Sublime Text/Packages/User/"
 ```
 
@@ -18,7 +18,7 @@ mv add_change_date.py "$HOME/Library/Application Support/Sublime Text/Packages/U
 Press <kbd>Win</kbd>+<kbd>R</kbd>, type `powershell` and press Enter. Then do:
 
 ```powershell
-Invoke-WebRequest -Uri "https://kaos.sh/sublime-plugin-spec-changelog/add_change_date.py" -OutFile add_change_date.py
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/essentialkaos/sublime-plugin-spec-changelog/refs/heads/master/add_change_date.py" -OutFile add_change_date.py
 Move-Item -Force -Path add_change_date.py -Destination "$HOME\AppData\Roaming\Sublime Text\Packages\User\"
 ```
 
@@ -39,4 +39,4 @@ Move-Item -Force -Path add_change_date.py -Destination "$HOME\AppData\Roaming\Su
 
 [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-<p align="center"><a href="https://essentialkaos.com"><img src="https://gh.kaos.st/ekgh.svg"/></a></p>
+<p align="center"><a href="https://kaos.dev"><img src="https://raw.githubusercontent.com/essentialkaos/.github/refs/heads/master/images/ekgh.svg"/></a></p>
